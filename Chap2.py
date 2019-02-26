@@ -1,44 +1,32 @@
-# exercise1
 
-hours=int(input("Enter Hours: "))
-rate=int(input("Enter Rate: "))
-if hours>40:
-	pay=rate*40
-	pay+=(hours-40)*1.5*rate
-	print(pay)
-else:
-	pay=rate*hours
-	print(pay)
+#exercise2
+name=input("Enter your name: ")
+print("Hello {}".format(name))
 
-# exercise 2
-try:
-	hours=int(input("Enter Hours: "))
-	rate=int(input("Enter Rate: "))
-	if hours>40:
-       		pay=rate*40
-        	pay+=(hours-40)*1.5*rate
-        	print(pay)
-	else:
-        	pay=rate*hours
-        	print(pay)
-except:
-	print("Please Enter A Numeric Value")
+#exercise3
+hours=int(input("Enter Hour: "))
+rate=float(input("Enter Rate: "))
+pay=hours*rate
+print("Pay:",pay)
 
-# exercise 3
-try:
-	score=float(input("Enter Score: "))
-	if score<0.0 or score>1.0:
-		print("Bad Score")
-	else:
-		if score>=0.9:
-			print("A")
-		elif score>=0.8:
-			print("B")
-		elif score>=0.7:
-			print("C")
-		elif score>=0.6:
-			print("D")
-		else:
-			print("F")	
-except:
-	print("Bad Score")
+#exercise4
+width=17
+height=12.0
+value1=width//2
+print(value1)
+print(type(value1))
+value2=width/2.0
+print(value2)
+print(type(value2))
+value3=height/3
+print(value3)
+print(type(value3))
+value4= 1+2*5
+print(value4)
+print(type(value4))
+
+#exercise5
+cel_temp=int(input("Enter temperature in celsius"))
+far_temp=(cel_temp*9/5)+32
+print(far_temp)
+
